@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SetFavourites">
+
+    <TextView
+        android:id="@+id/firstTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Please Select all the Clubs you are Interested in"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/firstTime2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="You may change this later in the 'Favourites' tab"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/firstTime" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="CULTURAL"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/firstTime2" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TECHNICAL"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView3"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/guideline" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SPORTS"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline2" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.33819953" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintGuide_percent="0.67639905"
+        app:layout_constraintHorizontal_bias="0.61"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.75" />
+
+    <Button
+        android:id="@+id/selectAll_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@android:string/selectAll"
+        app:layout_constraintBaseline_toBaselineOf="@+id/save_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.33"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/save_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SAVE"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.67"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline3"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/cadence_box"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cadence" />
+
+            <CheckBox
+                android:id="@+id/anR_box"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Anchorenza &amp; RadioG" />
+
+            <CheckBox
+                android:id="@+id/fineArts_box"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Fine Arts" />
+
+            <CheckBox
+                android:id="@+id/montage_box"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Montage" />
+
+            <CheckBox
+                android:id="@+id/lumiere_box"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lumiere" />
+
+            <CheckBox
+                android:id="@+id/octaves_box"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Octaves" />
+
+            <CheckBox
+                android:id="@+id/xpressions_box"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Xpressions" />
+
+            <CheckBox
+                android:id="@+id/litSoc_box"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="LitSoc" />
+
+            <CheckBox
+                android:id="@+id/debSoc_box"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="DebSoc" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/scrollView2"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="@+id/scrollView2"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <CheckBox
+                android:id="@+id/aeromodelling_box"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Aeromodelling" />
+
+            <CheckBox
+                android:id="@+id/equinox_box"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Equinox" />
+
+            <CheckBox
+                android:id="@+id/coding_box"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Coding" />
+
+            <CheckBox
+                android:id="@+id/cnA_box"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Consulting &amp; Analytics" />
+
+            <CheckBox
+                android:id="@+id/electronics_box"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Electronics" />
+
+            <CheckBox
+                android:id="@+id/prakriti_box"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Prakriti" />
+
+            <CheckBox
+                android:id="@+id/fnE_box"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Finance &amp; Economics" />
+
+            <CheckBox
+                android:id="@+id/robotics_box"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Robotics" />
+
+            <CheckBox
+                android:id="@+id/quiz_box"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Quiz" />
+
+            <CheckBox
+                android:id="@+id/eCell_box"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="E Cell" />
+        </LinearLayout>
+    </ScrollView>
+
+    <ScrollView
+        android:id="@+id/ScrollView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/scrollView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="@+id/scrollView2"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <CheckBox
+                android:id="@+id/aquatics_box"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Aquatics" />
+
+            <CheckBox
+                android:id="@+id/athletics_box"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Athletics" />
+
+            <CheckBox
+                android:id="@+id/badminton_box"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Badminton" />
+
+            <CheckBox
+                android:id="@+id/basketball_box"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Basketball" />
+
+            <CheckBox
+                android:id="@+id/cricket_box"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cricket" />
+
+            <CheckBox
+                android:id="@+id/football_box"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Football" />
+
+            <CheckBox
+                android:id="@+id/hockey_box"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hockey" />
+
+            <CheckBox
+                android:id="@+id/squash_box"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Squash" />
+
+            <CheckBox
+                android:id="@+id/tennis_box"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tennis" />
+
+            <CheckBox
+                android:id="@+id/tableTennis_box"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Table Tennis" />
+
+            <CheckBox
+                android:id="@+id/volleyball_box"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Volleyball" />
+
+            <CheckBox
+                android:id="@+id/weightlifting_box"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Weightlifting" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
